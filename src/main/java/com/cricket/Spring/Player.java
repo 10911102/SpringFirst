@@ -3,6 +3,12 @@ public class Player extends Team{
 	private int id;
 	private String name;
 	private int teamId;
+	
+	public Player(int id, String name, int teamId) {
+		this.id = id;
+		this.name = name;
+		this.teamId = teamId;
+	}
 	/**
 	 * @return the id
 	 */
