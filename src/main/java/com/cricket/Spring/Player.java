@@ -39,7 +39,12 @@ public class Player extends Team{
 	public void setTeamId(int teamId) {
 		this.teamId = teamId;
 	}
+	
+	@Override
+	public String toString() {
+		return "Player [id=" + id + ", name=" + name + ", teamId=" + teamId + "]";
+	}
 	public void play() {
-		System.out.println("Playing");
+		System.out.println("Playing  "+this);
 	}
 }
