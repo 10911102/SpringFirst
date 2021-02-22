@@ -4,20 +4,13 @@ public class Player extends Team{
 	private String name;
 	private int teamId;
 	
-	public Player(int id, String name, int teamId) {
-		this.id = id;
-		this.name = name;
-		this.teamId = teamId;
-	}
-	/**
-	 * @return the id
+	/*
+	 * public Player(int id, String name, int teamId) { this.id = id; this.name =
+	 * name; this.teamId = teamId; }
 	 */
 	public int getId() {
 		return id;
 	}
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -46,10 +39,6 @@ public class Player extends Team{
 		this.teamId = teamId;
 	}
 	
-	@Override
-	public String toString() {
-		return "Player [id=" + id + ", name=" + name + ", teamId=" + teamId + "]";
-	}
 	public void play() {
 		System.out.println("Playing  "+this);
 	}
